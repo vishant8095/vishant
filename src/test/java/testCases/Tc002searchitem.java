@@ -17,10 +17,7 @@ import testBase.Basepage;
 public class Tc002searchitem extends Basepage{
 	@Test
 	public void serchitem() throws InterruptedException
-	{
-		
-		
-		
+	{	
 		HomePage hm=new HomePage(driver);
 		hm.clicksign();
 		Signinpage sn=new Signinpage(driver);
@@ -32,8 +29,6 @@ public class Tc002searchitem extends Basepage{
 		sn2.clicksignbutton();
 		hm.serchitem("shoe");
 		hm.clickicon();
-		
-
 		hm.selectimg();
 		Set<String> winids=driver.getWindowHandles();
 		Iterator<String> it=winids.iterator();

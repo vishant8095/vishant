@@ -3,6 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="testCases.Tc001_login">
+        <methods>
+          <include name="lunch"/>
+          <include name="logintest"/>
+          <include name="quite"/>
+        </methods>
+      </class> <!-- testCases.Tc001_login -->
       <class name="testCases.Tc002searchitem">
         <methods>
           <include name="lunch"/>
