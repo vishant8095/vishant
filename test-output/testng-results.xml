@@ -1,39 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-08T12:16:50 IST" name="Suite" finished-at="2024-10-08T12:17:36 IST" duration-ms="46597">
+  <suite started-at="2025-04-23T14:25:56 IST" name="Suite" finished-at="2025-04-23T14:25:56 IST" duration-ms="90">
     <groups>
+      <group name="regression">
+        <method signature="Tc001.login_twitter()[pri:2, instance:groups.Tc001@2bd2b28e]" name="login_twitter" class="groups.Tc001"/>
+        <method signature="Tc002.register_twiter()[pri:2, instance:groups.Tc002@65b3a85a]" name="register_twiter" class="groups.Tc002"/>
+        <method signature="Tc003.lagout_twiter()[pri:2, instance:groups.Tc003@34997338]" name="lagout_twiter" class="groups.Tc003"/>
+      </group> <!-- regression -->
+      <group name="sanity">
+        <method signature="Tc001.login_fb()[pri:1, instance:groups.Tc001@2bd2b28e]" name="login_fb" class="groups.Tc001"/>
+        <method signature="Tc002.register_fb()[pri:1, instance:groups.Tc002@65b3a85a]" name="register_fb" class="groups.Tc002"/>
+        <method signature="Tc003.logout_fb()[pri:1, instance:groups.Tc003@34997338]" name="logout_fb" class="groups.Tc003"/>
+      </group> <!-- sanity -->
     </groups>
-    <test started-at="2024-10-08T12:16:50 IST" name="Test" finished-at="2024-10-08T12:17:36 IST" duration-ms="46597">
-      <class name="testCases.Tc002searchitem">
-        <test-method is-config="true" signature="lunch()[pri:0, instance:testCases.Tc002searchitem@726e5805]" started-at="2024-10-08T12:17:01 IST" name="lunch" finished-at="2024-10-08T12:17:07 IST" duration-ms="5901" status="PASS">
+    <test started-at="2025-04-23T14:25:56 IST" name="Test" finished-at="2025-04-23T14:25:56 IST" duration-ms="90">
+      <class name="groups.Tc001">
+        <test-method signature="login_fb()[pri:1, instance:groups.Tc001@2bd2b28e]" started-at="2025-04-23T14:25:56 IST" name="login_fb" finished-at="2025-04-23T14:25:56 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- lunch -->
-        <test-method signature="serchitem()[pri:0, instance:testCases.Tc002searchitem@726e5805]" started-at="2024-10-08T12:17:07 IST" name="serchitem" finished-at="2024-10-08T12:17:36 IST" duration-ms="29069" status="PASS">
+        </test-method> <!-- login_fb -->
+        <test-method signature="login_twitter()[pri:2, instance:groups.Tc001@2bd2b28e]" started-at="2025-04-23T14:25:56 IST" name="login_twitter" finished-at="2025-04-23T14:25:56 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- serchitem -->
-        <test-method is-config="true" signature="quite()[pri:0, instance:testCases.Tc002searchitem@726e5805]" started-at="2024-10-08T12:17:36 IST" name="quite" finished-at="2024-10-08T12:17:36 IST" duration-ms="644" status="PASS">
+        </test-method> <!-- login_twitter -->
+      </class> <!-- groups.Tc001 -->
+      <class name="groups.Tc002">
+        <test-method signature="register_fb()[pri:1, instance:groups.Tc002@65b3a85a]" started-at="2025-04-23T14:25:56 IST" name="register_fb" finished-at="2025-04-23T14:25:56 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- quite -->
-      </class> <!-- testCases.Tc002searchitem -->
-      <class name="testCases.Tc001_login">
-        <test-method is-config="true" signature="lunch()[pri:0, instance:testCases.Tc001_login@2cae1042]" started-at="2024-10-08T12:16:50 IST" name="lunch" finished-at="2024-10-08T12:16:55 IST" duration-ms="5461" status="PASS">
+        </test-method> <!-- register_fb -->
+        <test-method signature="register_twiter()[pri:2, instance:groups.Tc002@65b3a85a]" started-at="2025-04-23T14:25:56 IST" name="register_twiter" finished-at="2025-04-23T14:25:56 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- lunch -->
-        <test-method signature="logintest()[pri:0, instance:testCases.Tc001_login@2cae1042]" started-at="2024-10-08T12:16:55 IST" name="logintest" finished-at="2024-10-08T12:17:00 IST" duration-ms="4989" status="PASS">
+        </test-method> <!-- register_twiter -->
+      </class> <!-- groups.Tc002 -->
+      <class name="groups.Tc003">
+        <test-method signature="logout_fb()[pri:1, instance:groups.Tc003@34997338]" started-at="2025-04-23T14:25:56 IST" name="logout_fb" finished-at="2025-04-23T14:25:56 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logintest -->
-        <test-method is-config="true" signature="quite()[pri:0, instance:testCases.Tc001_login@2cae1042]" started-at="2024-10-08T12:17:00 IST" name="quite" finished-at="2024-10-08T12:17:01 IST" duration-ms="455" status="PASS">
+        </test-method> <!-- logout_fb -->
+        <test-method signature="lagout_twiter()[pri:2, instance:groups.Tc003@34997338]" started-at="2025-04-23T14:25:56 IST" name="lagout_twiter" finished-at="2025-04-23T14:25:56 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- quite -->
-      </class> <!-- testCases.Tc001_login -->
+        </test-method> <!-- lagout_twiter -->
+      </class> <!-- groups.Tc003 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

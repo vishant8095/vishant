@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.Tc002searchitem">
+      <class name="newpack.parallel">
         <methods>
-          <include name="serchitem"/>
+          <include name="checkdisplay"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- testCases.Tc002searchitem -->
+      </class> <!-- newpack.parallel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

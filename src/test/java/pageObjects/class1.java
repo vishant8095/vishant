@@ -18,10 +18,7 @@ public class class1 {
 		  }
 
 	  }
-	  System.out.println("the highest value: "+high_value);
-
-
-      
+	  System.out.println("the highest value: "+high_value);     
 	}
 
 }

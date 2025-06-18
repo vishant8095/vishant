@@ -1,28 +1,35 @@
 package practice;
-import java.io.IOException;
-import java.time.Duration;
+
+import java.util.List;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-public class child1 {
-	public static void main(String[] args) throws IOException, InterruptedException {
-		WebDriver driver=new ChromeDriver();
-		driver.get("https://www.youtube.com/");
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.manage().window().maximize();
-		driver.findElement(By.xpath("(//input[@name='search_query'])[1]")).sendKeys("kannada songs");
-		driver.findElement(By.xpath("//button[@title=\"Search\"]//yt-icon//div")).click();
-		for(int i=1;i>0;i++)
+
+public class vishanta  {
+public static void main(String[] args) {
+	WebDriver driver=new ChromeDriver();
+	driver.manage().window().maximize();
+	driver.get("https://blazedemo.com/reserve.php");
+	List<WebElement> rows=driver.findElements(By.xpath("//tbody//tr"));
+	System.out.println(rows.size());
+	List <WebElement> col=driver.findElements(By.xpath("//tbody//td"));
+	System.out.println(col.size());
+	String data=driver.findElement(By.xpath("//table[@class='table']//tr[3]/td[3]")).getText();
+	//System.out.println(data);
+	for(int i=0;i<rows.size();i++)
+	{
+		for(int j=0;j<col.size();j++)
 		{
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		Thread.sleep(2000);
-		js.executeScript("window.scrollBy(0,8000)"," ");
-		 }
-	}
+			String data1=driver.findElement(By.xpath("//table[@class='table']//tr["+i+"]/td["+j+"]")).getText();
+			System.out.print(data1);
+		}
+		System.out.println();
 	}
 
+}        
+}
 	
 
 

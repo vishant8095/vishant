@@ -2,6 +2,11 @@ package practice;
 
 import java.util.Scanner;
 
+
+ class m{
+	
+}
+
 public class palindrome_number {
 
 	public static void main(String[] args) {
